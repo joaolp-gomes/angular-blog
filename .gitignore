@@ -1,3 +1,12 @@
 node_modules
 .angular
 .DS_Store
+
+# Ignore font files if you decide to host them locally
+src/assets/fonts/*.ttf
+src/assets/fonts/*.woff
+src/assets/fonts/*.woff2
+
+# Ignore any temporary or generated files in assets
+src/assets/**/*.tmp
+src/assets/**/*.temp
