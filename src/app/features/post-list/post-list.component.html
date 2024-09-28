@@ -1,0 +1,19 @@
+<section class="post-list">
+  <h1 class="title">Latest Posts</h1>
+
+  @if (posts$ | async; as posts) {
+    @for (post of posts; track post.id) {
+      <post-card [post]="post"></post-card>
+    }
+  }
+
+  @if (currentPage$ | async; as currentPage) {
+    <div class="pagination">
+      <button (click)="onPageChange(currentPage - 1)" [disabled]="currentPage === 1">Previous</button>
+
+      <span>Page {{ currentPage }} of {{ totalPages$ | async }}</span>
+
+      <button (click)="onPageChange(currentPage + 1)" [disabled]="currentPage === (totalPages$ | async)">Next</button>
+    </div>
+  }
+</section>

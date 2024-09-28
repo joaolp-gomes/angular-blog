@@ -1,0 +1,45 @@
+.post-list {
+  padding: 32px;
+
+  .title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #333;
+  }
+
+  post-card {
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+
+    button {
+      background-color: #007bff;
+      color: #ffffff;
+      border: none;
+      padding: 8px 16px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover:not(:disabled) {
+        background-color: #0056b3;
+      }
+
+      &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+    }
+
+    span {
+      margin: 0 16px;
+    }
+  }
+}
