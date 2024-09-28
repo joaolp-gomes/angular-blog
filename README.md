@@ -34,23 +34,19 @@ The application uses NgRx Component Store for state management, specifically to 
 src/
 ├── app/
 │   ├── core/
-│   │   └── services/
-│   │       └── post.service.ts
+│   │   ├── entities
+│   │   └── services
 │   ├── features/
-│   │   ├── post-create/
-│   │   │   └── post-create.component.scss
-│   │   └── post-list/
-│   │       ├── post-list.store.ts
-│   │       └── post-list.store.spec.ts
+│   │   ├── post-create
+│   │   ├── post-details
+│   │   └── post-list
 │   └── shared/
-│       ├── header/
-│       │   └── header.component.spec.ts
-│       └── post-card/
-│           └── post-card.component.html
+│       ├── header
+│       └── post-card
 ```
 
 This structure organizes the application into:
 
-- `core`: Contains essential services like the `post.service.ts`
+- `core`: Contains essential services like the `post.service.ts` and entities.
 - `features`: feature-specific components and stores
 - `shared`: Includes reusable components like the header and post-card
