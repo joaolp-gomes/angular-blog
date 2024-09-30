@@ -1,11 +1,11 @@
 .post-create {
   max-width: 600px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 32px;
 
   h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 32px;
+    margin-bottom: 24px;
     color: #333;
   }
 
@@ -13,26 +13,25 @@
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
+    padding: 24px;
   }
 
   .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
 
     label {
       display: block;
-      margin-bottom: 0.5rem;
+      margin-bottom: 8px;
       font-weight: 500;
       color: #333;
     }
 
     .form-control {
       width: 100%;
-      padding: 0.5rem;
-      font-size: 1rem;
+      padding: 8px;
+      font-size: 16px;
       border: 1px solid #ccc;
       border-radius: 4px;
-      transition: border-color 0.2s ease-in-out;
 
       &:focus {
         outline: none;
@@ -48,16 +47,16 @@
 
   .error-message {
     color: #dc3545;
-    font-size: 0.875rem;
-    margin-top: 0.25rem;
+    font-size: 14px;
+    margin-top: 4px;
   }
 
   .submit-button {
     background-color: #007bff;
     color: #ffffff;
     border: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
+    padding: 12px 24px;
+    font-size: 16px;
     font-weight: 500;
     border-radius: 4px;
     cursor: pointer;
